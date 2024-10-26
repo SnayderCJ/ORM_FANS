@@ -1,4 +1,9 @@
-from core.models import *
+from libreria.models import *
+
+# Comando para ejecutar el shell de Orm de Django
+# python manage.py shell_plus -–print-sql
+
+
 
 # Consultar todos los registros de la tabla Autor
 Autor.objects.all() 
