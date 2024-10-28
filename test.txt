@@ -1,0 +1,12 @@
+FILA 2
+# 1. Crea 5 autores y relaciónalos con el libro “Ciencia para Todos” usando bulk_create.
+
+
+
+# 2. Encuentra todos los autores cuyos nombres contengan la letra "e" y que hayan escrito un libro en la categoría "Educación".
+
+# 3. Busca libros publicados entre los años 2018 y 2022, con más de 300 páginas, y que no pertenezcan a la categoría "Historia".
+
+# 4. Dado el libro “Cuentos Cortos”, muestra todos sus autores.
+
+# 5. Decrementa el número de páginas en 25 para todos los libros con más de 200 páginas y cuyo autor sea “Luis”.

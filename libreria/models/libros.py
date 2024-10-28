@@ -4,7 +4,6 @@ from django.db.models import Avg, Min, Max, Count, Sum
 from django.db.models import CharField, Case, F, Q, Value as V, When
 from django.db.models.functions import Concat, Left, Length, Replace
 from django.db.models import Prefetch
-from django_cte import CTEManager, CTEQuerySet
 
 from .editoriales import Editorial
 
@@ -303,9 +302,6 @@ class Libro(models.Model):
     desc_corta = models.CharField(max_length=2000, default='Sin reseña')
     estatus = models.CharField(max_length=1, choices=estatus_libro)
     categoria = models.CharField(max_length=50)
-
-    edicion_anterior = models.ForeignKey(
-        'self', null=True, default=None, on_delete=models.PROTECT)
 
     editorial = models.ForeignKey(
         Editorial, on_delete=models.PROTECT, related_name='libro_editorial')

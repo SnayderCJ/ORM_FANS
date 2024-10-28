@@ -1,5 +1,4 @@
 from django.db import models
-from django_cte import CTEManager
 
 
 class Editorial(models.Model):
@@ -12,5 +11,3 @@ class Editorial(models.Model):
     class Meta:
         managed = True
         db_table = 'libreria_editorial'
-
-    objects = CTEManager()
